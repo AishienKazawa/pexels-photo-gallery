@@ -52,3 +52,7 @@ button:focus-visible {
   border-radius: 50%;
   background-color: #fdca40;
 }
+
+.lightbox-content {
+  grid-template-rows: auto 1fr auto;
+}

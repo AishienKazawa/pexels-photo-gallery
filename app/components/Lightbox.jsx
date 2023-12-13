@@ -41,9 +41,9 @@ export default function Lightbox({
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="lightbox-container w-full h-full fixed top-0 left-0 flex justify-center items-center z-30 bg-ctm-secondary/75"
+        className="lightbox-container w-full h-full fixed top-0 left-0 z-30 bg-ctm-secondary/75"
       >
-        <div className="lightbox-content grid gap-y-5 w-full h-full p-6">
+        <div className="lightbox-content grid gap-y-5 w-full h-full p-6 bg">
           {/* lightbox tools */}
           <div className="flex gap-x-2 ml-auto mr-0">
             <button
@@ -61,25 +61,30 @@ export default function Lightbox({
             </button>
           </div>
 
-          {/* lightbox selected image */}
-          <img
-            src={photo.src.large}
-            alt={photo.alt}
-            className="lightbox-image h-full mx-auto"
-          />
-          <div className="text-ctm-primary text-center">
-            <p className="">Photo by - {photo.photographer}</p>
-            <span className="block">
-              {photo.width} x {photo.height}
-            </span>
+          <div>
+            {/* lightbox selected image */}
+
+            <img
+              src={photo.src.large}
+              alt={photo.alt}
+              className="lightbox-image h-[60vh] mx-auto object-cover"
+            />
+
+            {/* lightbox selected image title */}
+            <div className="text-ctm-primary text-center mt-3">
+              <p className="">Photo by - {photo.photographer}</p>
+              <span className="block">
+                {photo.width} x {photo.height}
+              </span>
+            </div>
           </div>
 
           {/* lightbox thumbnails */}
-          <div className="overflow-x-auto pb-3">
+          <div className="overflow-y-hidden overflow-x-auto pb-3">
             <div className="slider-container w-fit flex gap-x-2">
               {collectedPhotos &&
                 collectedPhotos.map((photo, index) => (
-                  <div key={index} className="w-24 h-24">
+                  <div key={index} className="min-w-[10rem] h-24">
                     <img
                       src={photo.src.large}
                       alt={photo.alt}

@@ -52,15 +52,15 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="px-5 py-24 grid gap-y-24">
+    <main className="px-5 py-24 grid gap-y-24 relative">
       {/* header */}
       <header className="h-fit md:h-40">
         <div className="max-w-screen-xl h-full mx-auto flex flex-col justify-between md:items-center md:flex-row">
           <div className="mb-5 md:mb-0 md:w-2/5">
             <h1 className="text-5xl font-bold mb-2">Pexels Photos</h1>
             <p>
-              The best free stock photos, royalty free images & videos shared by
-              creators.
+              The finest collection of free stock photos and royalty-free
+              images, generously shared by creators.
             </p>
           </div>
 
