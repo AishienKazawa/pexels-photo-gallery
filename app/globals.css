@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*** base style ***/
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: none;
+}
+
+/*** custom style ***/
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #0f0e0e, transparent 90%);
+  opacity: 0;
+}
+
+.card-cover:hover {
+  opacity: 1;
+}
+
+.card-cover .card-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-cover .card-information .photographer-avatar {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #fdca40;
+}
