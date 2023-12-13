@@ -36,4 +36,4 @@ This will start the development server, and you can access the Photo Gallery at 
 
 ## Hosted Version
 
-A live version of the Pexels Photo Gallery is available [here]().
+A live version of the Pexels Photo Gallery is available [here](https://pexels-galleria.vercel.app/).
