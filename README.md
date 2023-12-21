@@ -1,12 +1,14 @@
-# Pexels Photo Gallery
+# Pexels Galleria
 
-## Features
+Welcome to the Pexels Photo Gallery! This application offers a delightful experience for exploring a curated collection of high-resolution images sourced from the Pexels API. Whether you're seeking inspiration or simply enjoying visually stunning photographs, our gallery provides a seamless way to immerse yourself in the world of captivating visuals.
 
-1. Image Display: View a curated collection of images fetched from the Pexels API. The gallery provides a visually appealing way to explore diverse and high-resolution photographs.
+## Key Features
 
-2. Search Functionality: Search feature to find relevant images from the Pexels API, making it easy to discover photos tailored to your interests.
+1. Image Display: Immerse yourself in a visually stunning collection of curated images, showcasing diversity and quality, sourced directly from the Pexels API.
 
-3. Download Images: Download your favorite images directly from the gallery. A simple and intuitive download button allows you to save high-quality photos to your device effortlessly.
+2. Search Functionality: Tailor your exploration by using the search feature to find images that match your interests. Discover relevant photos effortlessly with our intuitive search functionality.
+
+3. Download Images: Save your favorite images directly to your device with a user-friendly download button. Enjoy the convenience of preserving high-quality photos for personal use.
 
 ## Getting Started
 
@@ -32,8 +34,22 @@ Obtain a free API key from the [Pexels API](https://www.pexels.com/api/).
    npm run dev
 ```
 
-This will start the development server, and you can access the Photo Gallery at http://localhost:3000 in your web browser.
+This will start the development server, and you can access the Photo Galleria at http://localhost:3000 in your web browser.
 
-## Hosted Version
+## Dependencies and Requirements
 
-A live version of the Pexels Photo Gallery is available [here](https://pexels-galleria.vercel.app/).
+Ensure you have Node.js and npm installed on your machine before proceeding with the installation. You can download them from [Node.js website](https://nodejs.org/en).
+
+## Usage Instructions
+
+Once the application is running, open your web browser and navigate to http://localhost:3000 to explore the gallery. Use the search bar to find specific images based on your interests. Click on the download button to save your favorite images to your device.
+
+## Acknowledgments
+
+We would like to express our gratitude to the Pexels API for providing access to a vast collection of high-quality images.
+
+## Demo
+
+Explore a live version of the Pexels Galleria [here](https://pexels-galleria.vercel.app/). Enjoy the beauty captured in each image and share your experience with us.
+
+Feel free to provide feedback, or report issues. Happy exploring!
